@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОВП</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function changeButtonColor(button, color) {
+            button.style.backgroundColor = color;
+        }
+        function openWhatsApp() {
+            const phoneNumber = '89681518761';
+            const message = 'Здравствуйте! Что Вас интересует? Напишите Ваш вопрос в чат;)';
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Minaaya</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#yslygi">Услуги</a></li>
+                <li><a href="#prise">Прайс</a></li>
+                <li><a href="#otzyvy">Отзывы</a></li>
+                <li><a href="#zapis">Запись</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>Салон красоты</h2>
+            <p>Все лучшее для Неё</p>
+            <a class="btn" href="#" 
+               onmouseover="changeButtonColor(this, '#ffcc00')" 
+               onmouseout="changeButtonColor(this, '')" 
+               onclick="openWhatsApp()">Написать в WhatsApp</a>
+        </section>
+        
+        <section class="services">
+            <h2>Услуги</h2>
+            <div class="service-item">
+                <h3>Маникюр</h3>
+                <img src="c:\Users\user\Desktop\овп 12.11(гдим)\img\manicure.jpg" alt="Маникюр" class="service-image">
+                <p>от 1900</p>
+            </div>
+            <div class="service-item">
+                <h3>Педикюр</h3>
+                <img src="c:\Users\user\Desktop\овп 12.11(гдим)\img\pedicure.jpg" alt="Педикюр" class="service-image">
+                <p>1900</p>
+            </div>
+            <div class="service-item">
+                <h3>Макияж</h3>
+                <img src="c:\Users\user\Desktop\овп 12.11(гдим)\img\makeup.jpg" alt="Макияж" class="service-image">
+                <p>3500</p>
+            </div>
+            <div class="service-item">
+                <h3>Укладка</h3>
+                <img src="c:\Users\user\Desktop\овп 12.11(гдим)\img\ukladka.jpg" alt="Укладка" class="service-image">
+                <p>2000</p>
+            </div>
+            <div class="service-item">
+                <h3>Лазер</h3>
+                <img src="c:\Users\user\Desktop\овп 12.11(гдим)\img\lazer.jpg" alt="Лазер" class="service-image">
+                <p>от 500</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 12.11.2024 ОВП </p>
+    </footer>
+</body>
+</html>
